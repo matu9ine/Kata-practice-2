@@ -39,53 +39,59 @@ body {
   align-items: center;
 }
 .close__menu {
+  display: inline-block;
   border: none;
-  background: none;
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  background-color: #ff3e79;
+  position: relative; 
  
 }
-.close__menu__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff3e79;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.close__menu-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 20px; 
+  height: 20px;
   background-image: url('../img/icon\ x.svg');
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-size: cover;
+
 }
 
-.close__menu__svg:hover {
+.close__menu:hover {
   transition: 2s;
   transform: rotate(360deg);
 }
-.close__menu__svg:not(:hover) {
+.close__menu:not(:hover) {
   transition: 2s;
 }
 .search__menu {
+  display: inline-block;
   border: none;
-  background: none;
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  background-color: #ff3e79;
+  position: relative; 
+ 
 }
 .search__menu__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff3e79;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative;
-  right: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 20px; 
+  height: 20px;
   background-image: url('../img/icon\ search.svg');
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-size: cover;
 }
-.search__menu__svg:hover {
+.search__menu:hover {
   opacity: 0.8;
   transition: 1.5s;
 }
-.search__menu__svg:not(:hover) {
+.search__menu:not(:hover) {
   transform: scale(0.93);
   transition: 1.5s;
 }
@@ -156,72 +162,55 @@ a {
 }
 
 .contact__button {
+  display: inline-block;
   border: none;
-  background: none;
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+  background-color: #ff3e79;
+  position: relative; 
 }
 .call__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff3e79;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 20px; 
+  height: 20px;
   background-image: url('../img/icon\ call.svg');
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-size: cover;
+
 }
-.call__svg:hover {
+.contact__button:hover {
   opacity: 0.8;
   transition: 1.5s;
 }
-.call__svg:not(:hover) {
+.contact__button:not(:hover) {
   transform: scale(0.93);
   transition: 1.5s;
 }
 .chat__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff3e79;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 20px; 
+  height: 20px;
   background-image: url('../img/icon\ text.svg');
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-size: cover;
 }
-.chat__svg:hover {
-  opacity: 0.8;
-  transition: 1.5s;
-}
-.chat__svg:not(:hover) {
-  transform: scale(0.93);
-  transition: 1.5s;
-}
+
 .people__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff3e79;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 20px; 
+  height: 20px;
   background-image: url('../img/Group\ people.svg');
-  background-repeat: no-repeat;
-  background-position: 50%;
+  background-size: cover;
 }
-.people__svg:hover {
-  opacity: 0.8;
-  transition: 1.5s;
-}
-.people__svg:not(:hover) {
-  transform: scale(0.93);
-  transition: 1.5s;
-}
+
 .contact__block__mail {
   font-family: "TT Lakes medium";
   font-size: 16px;
@@ -249,6 +238,9 @@ flex-direction: column;
   flex-direction: row;
   padding: 7px;
   margin-top: 40px;
+  list-style-type: none;
+  position: relative;
+  right: 10px;
 }
 .lang__text{
 font-family: "TT Lakes medium";
